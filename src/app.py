@@ -48,9 +48,9 @@ def main():
     st.title('Analysis of respiratory diseases in Brazil from 2019 to 2022')
     st.markdown('This work is for didatical purposes only')
     
-    desease = st.selectbox('Select the desease',
+    desease = st.sidebar.selectbox('Select the desease',
                   diseases)
-    state = st.selectbox('Select the state',
+    state = st.sidebar.selectbox('Select the state',
                   state)
 
     chart = comparative_chart(data_2020, 
