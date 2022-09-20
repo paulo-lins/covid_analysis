@@ -38,9 +38,9 @@ def comparative_chart(data_2020, data_2021, data_2022, cause, state='BRASIL'):
 
 def main():
     #data_2019 = load_data('data\obitos-2019.csv')
-    data_2020 = load_data('..\data\obitos-2020.csv')
-    data_2021 = load_data('..\data\obitos-2021.csv')
-    data_2022 = load_data('..\data\obitos-2022.csv')
+    data_2020 = load_data('.\data\obitos-2020.csv')
+    data_2021 = load_data('.\data\obitos-2021.csv')
+    data_2022 = load_data('.\data\obitos-2022.csv')
     
     diseases = data_2020['tipo_doenca'].unique()
     state = np.append(data_2020['uf'].unique(), 'BRASIL')
