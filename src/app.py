@@ -15,7 +15,7 @@ def comparative_chart(data_2020, data_2021, data_2022, cause, state='BRASIL'):
         total_deaths_2020 = data_2020.groupby(['tipo_doenca']).sum()
         total_deaths_2021 = data_2021.groupby(['tipo_doenca']).sum()
         total_deaths_2022 = data_2022.groupby(['tipo_doenca']).sum()
-        list_cause = [int(total_deaths_2019.loc[cause]), int(total_deaths_2020.loc[cause]), int(total_deaths_2021.loc[cause]), int(total_deaths_2022.loc[cause])]
+        list_cause = [int(total_deaths_2020.loc[cause]), int(total_deaths_2021.loc[cause]), int(total_deaths_2022.loc[cause])]
         data_list = pd.DataFrame({'Total': list_cause,
                                 'Year': [2019, 2020, 2021, 2022]})
 
